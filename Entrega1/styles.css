@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #CCFCA2;
+}
+
+.formulario {
+    background-color: rgb(244, 250, 237);
 }
 
 .loginBox{
@@ -39,17 +48,55 @@ body {
 }
 
 .form {
+    margin: 0 auto 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin-top: 35px;
+    /*border: solid 1px red;*/
 }
 
+.tabela {
+    width: 600px;
+    margin-top: 80px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(205, 241, 163);
+}
+
+.cabecalho {
+    width: 579px;
+    background-color:rgb(124, 146, 99);
+    margin-bottom: 15px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.cadastro {
+    line-height: 2;
+}
+
+.form-entrada {
+    width: 500px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
 
 .btn-success {
     background-color: #4E833A;
     font-family: 'Poppins';
+}
+
+.btn-cancel {
+    background-color: rgb(204, 88, 88);
+    font-family: 'Poppins';
+    color: #FFFFFF;
+}
+
+.btn-form {
+    background-color: rgb(244, 250, 237);
 }
 
 .container {
@@ -66,6 +113,11 @@ body {
   width: 100%;
   display: block;
   padding-bottom: 23px;
+}
+
+.cadastro{
+    font-family: 'Poppins';
+    color: honeydew;
 }
 
 .logo-titulo {
@@ -117,16 +169,9 @@ button {
 .btn {
     justify-content: center;
     margin-top: 20px;
-    
 }
 
-a {
-    font-size: 14px;
-    font-family: 'Poppins';
-    color: #E5FFCE;
-}
-
-p {
+.textinho {
     font-size: 14px;
     font-family: 'Poppins';
     color: #E5FFCE;
