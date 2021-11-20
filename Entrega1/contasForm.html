@@ -8,31 +8,34 @@
     <link href="styles.css" rel="stylesheet">
     <title>Contas</title>
 </head>
-<body>
-    <div class="container">
-        <h4>Cadastro de Contas</h4>
-        <form class="form">
-            <div class="input">
-                <input type="text" name="idUsuario" placeholder="Selecione um usuário">
+<body class="formulario">
+    <div class="form tabela col-md-8">
+        <div class="cabecalho">
+            <h4 class="cadastro">Cadastro de Contas</h4>
+        </div>
+        <form class="form-entrada">
+            <div class="form-group">
+                <select class="form-control">
+                    <option selected>Selecione um usuário</option>
+                    <option value="1">Ronaldo</option>
+                    <option value="2">Franscisco</option>
+                </select>
             </div>
-            <div class="input">
-                <input type="text" name="idCategoria" placeholder="Selecione uma categoria">
+            <div class="form-group">
+                <input class="form-control" type="text" name="nome" placeholder="Nome Conta">
             </div>
-            <div class="input">
-                <input type="number" name="valor" placeholder="Valor">
+            <div class="form-group">
+                <input class="form-control" type="text" name="banco" placeholder="Banco">
             </div>
-            <div class="input">
-                <input type="text" name="operacao" placeholder="Operação">
+            <div class="form-group">
+                <input class="form-control" type="text" name="agencia" placeholder="Agência">
             </div>
-            <div class="input">
-                <input type="date" name="data" placeholder="Data">
+            <div class="form-group">
+                <input class="form-control" type="number" name="conta-corrente" placeholder="Conta-corrente">
             </div>
-            <div class="input">
-                <input type="text" name="descricao" placeholder="Descrição">
-            </div>
-            <div class="btns">
-                <button class="btn-save" type="submit">Save</button>
-                <button class="btn-cancel">Cancel</button>
+            <div class ="btns">
+                <button class="btn btn-form" type="submit">Save</button>
+                <button class="btn btn-form mt-1"><a href="index.html">Cancel</a></button>
             </div>
         </form>
     </div>

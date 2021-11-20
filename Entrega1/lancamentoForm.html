@@ -8,31 +8,41 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
 </head>
-<body>
-    <div class="container">
-        <h4>Cadastro de lançamento</h4>
-        <form class="">
-            <div class="input">
-                <input type="text" name="idConta" placeholder="Selecione uma conta">
+<body class="formulario">
+    <div class="form tabela col-md-8">
+        <div class="cabecalho">
+            <h4 class="cadastro">Cadastro de Lançamentos</h4>
+        </div>
+        <form class="form-entrada">
+            <div class="form-group">
+                <input class="form-control" type="text" name="idConta" placeholder="id da Conta">
             </div>
-            <div class="input">
-                <input type="text" name="idCategoria" placeholder="Selecione uma categoria">
+            <div class="form-group">
+                <select class="form-control">
+                    <option selected>Selecione uma Categoria</option>
+                    <option value="1">Categoria 1</option>
+                    <option value="2">Categoria 2</option>
+                </select>
             </div>
-            <div class="input">
-                <input type="number" name="valor" placeholder="Valor">
+            <div class="form-group">
+                <input class="form-control" type="number" name="valor" placeholder="Valor">
             </div>
-            <div class="input">
-                <input type="text" name="operacao" placeholder="Operação">
+            <div class="form-group">
+                <select class="form-control">
+                    <option selected>Selecione uma Operação</option>
+                    <option value="1">Operação 1</option>
+                    <option value="2">Operação 2</option>
+                </select>
             </div>
-            <div class="input">
-                <input type="date" name="data" placeholder="Data">
+            <div class="form-group">
+                <input class="form-control" type="date" name="data" placeholder="Data">
             </div>
-            <div class="input">
-                <input type="text" name="descricao" placeholder="Descrição">
+            <div class="form-group">
+                <input class="form-control" type="text" name="descricao" placeholder="Descricão">
             </div>
-            <div class="btns">
-                <button class="btn-save" type="submit">Save</button>
-                <button class="btn-cancel">Cancel</button>
+            <div class ="btns">
+                <button class="btn btn-form" type="submit">Save</button>
+                <button class="btn btn-form mt-1"><a href="index.html">Cancel</a></button>
             </div>
         </form>
     </div>
